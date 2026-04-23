@@ -1,48 +1,87 @@
-# Lenguaje de programación JOCOTE
-## Creado por:
-- ### Luis Fernando Benavides - 2023072689                          
-- ### Kristhel Cordero - 2023135405                               
-- ### Juan Diego Jiménez - 2019199111                            
-- ### Alex Naranjo Masis - 2023063599                           
-- ### José Pablo Vega - 2023367318                                    
+# JOCOTE – Transpilador en Python
 
-## ¿Qué es JOCOTE?
-Jocote es un lenguaje que fue diseñado como una metáfora viviente de la resiliencia, crecimiento y caos natural. Inspirado por la vida del jocote (el fruto), que a pesar de las adversidades del mundo actual, continúa creciendo y evolucionando.
+## 📌 Descripción
 
-Su implementación está hecha en python, y se compone de cuatro etapas que son el Explorador, el Analizador, el Verificador,
-y el Generador de código.
+**JOCOTE** es un lenguaje de programación diseñado como parte de un proyecto académico, junto con un transpilador implementado en Python.
 
-Para el manejo de errores, se optó por una implementación del modo pánico, con el fin de evaluar si la mayor parte posible de el código es correcto en una sola compilación.
+El sistema toma código escrito en JOCOTE y lo transforma en código Python ejecutable, pasando por múltiples etapas del proceso de compilación.
 
-# Estructura del Proyecto
+El lenguaje está inspirado conceptualmente en la resiliencia y crecimiento del fruto jocote, reflejando estructuras dinámicas y evolución del código.
+
+---
+
+## 🧠 Arquitectura del compilador
+
+El transpilador está compuesto por cuatro etapas principales:
+
+* **Explorador (Lexer)** → análisis léxico del código fuente
+* **Analizador (Parser)** → construcción del árbol de sintaxis abstracta (AST)
+* **Verificador (Semantic Analyzer)** → validación semántica y manejo de símbolos
+* **Generador de código** → transformación del AST a código Python
+
+Además, el sistema implementa manejo de errores mediante **modo pánico**, permitiendo continuar el análisis incluso ante errores para detectar múltiples fallos en una sola ejecución.
+
+---
+
+## ⚙️ Tecnologías
+
+* Python
+* Diseño de compiladores
+* Estructuras de datos (árboles, tablas de símbolos)
+
+---
+
+## 🧩 Estructura del proyecto
+
 ```bash
 .
-├── jocote.py                       # Punto de entrada del intérprete
+├── jocote.py
 ├── explorador/
-│   ├── examples/                   # Archivos de ejemplo escritos en JOCOTE
-│   └── explorador.py               # Explorador léxico
 ├── analizador/
-│   ├── examples/                   # Archivos de ejemplo escritos en JOCOTE
-│   ├── asa.py                      # Clases y métodos para el árbol de sintáxis abstracta
-│   ├── auxiliares_analizador.py    # Funciones de validacion para el analizador
-│   └── analizador.py               # Analizador
 ├── verificador/
-│   ├── examples/                   # Archivos de ejemplo escritos en JOCOTE
-│   ├── tabla_simbolos.py           # Tabla para manejar la profundidad de las referencias
-│   ├── visitador.py                # Clase que permite al verificador ir nodo por nodo
-│   └── verificador.py              # Verificador
 ├── generador/
-│   ├── examples/                   # Archivos de ejemplo escritos en JOCOTE
-│   ├── visitador_python.py         # Clase que permite al generador recorrer el asa y generar el codigo .py
-│   └── generador.py                # Generador
 └── utils/
-    ├── archivos.py                 # Funciones auxiliares para cargar archivos
-    └── jocoterrores.py             # Clases de error del lenguaje JOCOTE
 ```
 
-# Ejemplos
-Para correr el transpilador, puede utilizar el programa de ejemplo que es una carrera de jocotes con el siguente comando:
+Cada módulo representa una etapa del proceso de compilación.
+
+---
+
+## 🚀 Cómo ejecutar
+
+Ejecuta el transpilador con:
+
 ```bash
 python3 jocote.py --solo-jocotiar input/carreraCaracoles.tcj
 ```
-Esto le generará un archivo en la carpeta output, que luego podrá correr como un archivo python común y corriente. Puede ver cómo funciona cada uno de los módulos de este proyecto en el README respectivo.
+
+Esto generará un archivo en la carpeta `output`, el cual puede ejecutarse como un programa Python estándar.
+
+---
+
+## 💡 Aprendizajes
+
+* Implementación de un pipeline completo de compilador
+* Diseño de lenguajes de programación
+* Construcción y recorrido de AST
+* Manejo de errores en compiladores (modo pánico)
+* Separación de fases en procesamiento de código
+
+---
+
+## 👥 Equipo
+
+Proyecto desarrollado en colaboración con:
+
+* Luis Fernando Benavides
+* Kristhel Cordero
+* Juan Diego Jiménez
+* Alex Naranjo Masis
+* José Pablo Vega Solano
+
+---
+
+## 📌 Notas
+
+* Proyecto académico enfocado en el diseño e implementación de un lenguaje de programación
+* Incluye ejemplos funcionales dentro del repositorio
