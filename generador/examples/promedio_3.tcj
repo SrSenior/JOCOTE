@@ -1,0 +1,11 @@
+mae Calcula el promedio de tres temperaturas
+
+jocotazo promedio_temperaturas(cele t1, cele t2, cele t3) {
+    cele suma = t1 apiar t2
+    suma = suma apiar t3
+    cele promedio = suma semilla 3
+    brotar promedio
+}
+
+cele promedio = promedio_temperaturas(22.5, 24.0, 23.5)
+estampar_num(promedio)

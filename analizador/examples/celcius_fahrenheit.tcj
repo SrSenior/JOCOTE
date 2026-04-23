@@ -1,0 +1,9 @@
+mae pasar de celsius a fahrenheit, sólo hay que multiplicar por 9, dividir por 5 y sumar 32
+
+jocotazo celsius_a_fahrenheit(cele celsius) {
+    cele fahr = celsius sembrar 1.8
+    fahr = fahr apiar 32
+    brotar fahr
+}
+
+cele temp = celsius_a_fahrenheit(25.5)

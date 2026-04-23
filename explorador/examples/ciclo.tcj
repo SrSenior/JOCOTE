@@ -1,0 +1,9 @@
+mae esto imprime hola n veces
+
+jocote n = 5
+jocote i = 0
+
+madurar (i < n) {
+    estampar(θholaθ)
+    i = i apiar 1
+}

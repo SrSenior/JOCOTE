@@ -1,0 +1,5 @@
+mae Pide al usuario un texto y lo repite de vuelta
+
+fibra entrada = injerte(θDecime algo: θ)
+fibra respuesta = θMe dijiste: θ apiar entrada
+estampar(respuesta)

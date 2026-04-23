@@ -1,0 +1,12 @@
+mae Devuelve el mayor entre dos números
+
+jocotazo mayor(jocote a, jocote b) {
+    jocote resultado = a
+    qtmeten (b > a) {
+        resultado = b
+    }
+    brotar resultado
+}
+
+jocote maximo = mayor(17, 23)
+estampar_num(maximo)

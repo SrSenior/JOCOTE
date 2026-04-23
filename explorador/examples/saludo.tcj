@@ -1,0 +1,14 @@
+mae esta es una función que recibe un texto y retorna otro
+
+jocotazo saludar(fibra nombre) {
+    fibra mensaje = ωHola ω
+    mensaje = mensaje apiar nombre
+    brotar mensaje
+}
+
+fibra resultado = saludar(ωJocoaquínω) 
+mae Jocoaquín = Jocote más Joaquín
+estampar(resultado)
+
+ඞ mae en JOCOTE no se permiten esas cosas
+

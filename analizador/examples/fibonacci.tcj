@@ -1,0 +1,25 @@
+mae Calcula el n-avo número de Fibonacci
+
+jocotazo fibonacci(jocote n) {
+    
+    jocote res = 0
+
+    qtmeten (n <= 0) {
+        res = 0
+    }
+    qmas (n == 1) {
+        res = 1
+    }
+    qno {
+        jocote a = n comer 1
+        jocote b = n comer 2
+        a = fibonacci(a)
+        b = fibonacci(b)
+        res = a apiar b
+    }
+
+    brotar res
+}
+
+jocote resultado = fibonacci(8)
+

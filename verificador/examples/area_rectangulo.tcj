@@ -1,0 +1,9 @@
+mae Calcula el área de un rectángulo
+
+jocotazo area_rectangulo(cele base, cele altura) {
+    cele area = base sembrar altura
+    brotar area
+}
+
+cele a = area_rectangulo(5.2, 3.1)
+estampar_num(a)

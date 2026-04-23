@@ -1,0 +1,15 @@
+mae Calcula base elevado a exponente de forma iterativa
+
+jocotazo elevar(jocote base, jocote exponente) {
+    jocote resultado = 1
+
+    madurar (exponente > 0) {
+        resultado = resultado sembrar base
+        exponente = exponente comer 1
+    }
+
+    brotar resultado
+}
+
+jocote potencia = elevar(3, 4)
+estampar_num(potencia)

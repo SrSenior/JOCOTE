@@ -1,0 +1,19 @@
+mae cuenta numeros pares hasta el fin
+
+jocotazo contar_pares(jocote maximo) {
+    jocote cuenta = 0
+    jocote num = 0
+    
+    madurar (num <= maximo) {
+        jocote esPar = num semilla 2
+        qtmeten (esPar == 0) {
+            cuenta = cuenta apiar 1
+        }
+        num = num apiar 1
+    }
+    
+    brotar cuenta
+}
+
+mae Contar pares hasta 10
+jocote total_pares = contar_pares(10)

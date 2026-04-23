@@ -1,0 +1,19 @@
+mae Cuenta cuántos divisores tiene un número
+
+jocotazo contar_divisores(jocote numero) {
+    jocote divisor = 1
+    jocote cuenta = 0
+
+    madurar (divisor <= numero) {
+        jocote residuo = numero semilla divisor
+        qtmeten (residuo == 0) {
+            cuenta = cuenta apiar 1
+        }
+        divisor = divisor apiar 1
+    }
+
+    brotar cuenta
+}
+
+jocote total_divisores = contar_divisores(12)
+estampar_num(total_divisores)

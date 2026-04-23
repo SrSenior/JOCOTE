@@ -1,0 +1,137 @@
+mae carrera de caracolitos!!! _@ï
+mae suave, los caracoles se comen los jocotes?
+mae mejor carrera de jocotes!!! θωθ ⬬
+
+mae declaramos a nuestros competidores
+
+fibra jocoteVerde = ω\033[32m_@ï\033[0mω
+fibra jocotePinton = ω\033[33m_@ï\033[0mω
+fibra jocoteMaduro = ω\033[31m_@ï\033[0mω
+
+mae hacemos una funcion para ver si avanza o no el jocote
+
+jocotazo rodar(jocote indice) {
+
+    qtmeten (jocoteMalo()) {
+        indice = indice apiar 1
+    }
+
+    brotar indice
+
+}
+
+mae hacemos una funcion para saber si un jocote ya ganó
+
+jocotazo alguien_ganó(jocote largo, jocote indiceVerde, jocote indicePinton, jocote indiceMaduro) {
+
+    jocote ganador = 0
+
+    qtmeten (indiceVerde >= largo) {
+        ganador = 1
+    }
+    qmas (indicePinton >= largo) {
+        ganador = 1
+    }
+    qmas (indiceMaduro >= largo) {
+        ganador = 1
+    }
+    qno {
+        ganador = 0
+    }
+
+    brotar ganador
+
+}
+
+mae hacemos una funcion para saber qué jocote ya ganó
+
+jocotazo quien_ganó(jocote largo, jocote indiceVerde, jocote indicePinton, jocote indiceMaduro) {
+
+    fibra ganador = ω ω
+
+    qtmeten (indiceVerde >= largo) {
+        ganador = jocoteVerde
+    }
+    qmas (indicePinton >= largo) {
+        ganador = jocotePinton
+    }
+    qmas (indiceMaduro >= largo) {
+        ganador = jocoteMaduro
+    }
+    qno {
+        ganador = ωNadieω
+    }
+
+    brotar ganador
+
+}
+
+mae hacemos una funcion para imprimir la carrera
+
+jocotazo imprimir_carrera(jocote largo, jocote indiceVerde, jocote indicePinton, jocote indiceMaduro) {
+    
+    fibra mensaje = ωω
+
+    cosechar i en (largo) {
+        qtmeten (i == indiceVerde){
+            mensaje = mensaje apiar jocoteVerde
+        }
+        qno {
+            mensaje = mensaje apiar ω ω
+        }
+    }
+    mensaje = mensaje apiar ω|\nω
+
+    cosechar i en (largo) {
+        qtmeten (i == indicePinton){
+            mensaje = mensaje apiar jocotePinton
+        }
+        qno {
+            mensaje = mensaje apiar ω ω
+        }
+    }
+    mensaje = mensaje apiar ω|\nω
+
+    cosechar i en (largo) {
+        qtmeten (i == indiceMaduro){
+            mensaje = mensaje apiar jocoteMaduro
+        }
+        qno {
+            mensaje = mensaje apiar ω ω
+        }
+    }
+    mensaje = mensaje apiar ω|\nω
+
+    desestampar()
+    estampar(mensaje)
+    brotar mensaje
+}
+
+mae hacemos una funcion para la carrera
+
+jocotazo carrera_de_jocotes(jocote largo, jocote velocidad) {
+
+    jocote indiceVerde = 0
+    jocote indicePinton = 0
+    jocote indiceMaduro = 0
+    
+    madurar (alguien_ganó(largo, indiceVerde, indicePinton, indiceMaduro) == 0) {
+
+        imprimir_carrera(largo, indiceVerde, indicePinton, indiceMaduro)
+
+        suave(velocidad)
+
+        indiceVerde = rodar(indiceVerde)
+        indicePinton = rodar(indicePinton)
+        indiceMaduro = rodar(indiceMaduro)
+
+    }
+
+    brotar ωEL GANADOR ES ω apiar quien_ganó(largo, indiceVerde, indicePinton, indiceMaduro)
+
+}
+
+mae iniciamos el programa
+
+fibra resultado = carrera_de_jocotes(15, 0.5)
+estampar(resultado)

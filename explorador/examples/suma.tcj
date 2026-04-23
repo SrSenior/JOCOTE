@@ -1,0 +1,17 @@
+mae esto calcula la suma de los primeros n números
+
+jocotazo ir_sumando(jocote n) {
+
+    jocote contador = 1
+    jocote suma = 0
+
+    madurar (contador <= n) {
+        suma = suma apiar contador
+        contador = contador apiar 1
+    }
+
+    brotar suma
+
+}
+
+estampar(ir_sumando(5))

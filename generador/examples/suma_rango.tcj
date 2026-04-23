@@ -1,0 +1,15 @@
+mae Suma todos los números entre dos valores (inclusive)
+
+jocotazo sumar_rango(jocote inicio, jocote fin) {
+    jocote suma = 0
+
+    madurar (inicio <= fin) {
+        suma = suma apiar inicio
+        inicio = inicio apiar 1
+    }
+
+    brotar suma
+}
+
+jocote resultado = sumar_rango(3, 7)
+estampar_num(resultado)

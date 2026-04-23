@@ -1,0 +1,19 @@
+mae esto es para comparar dos números
+
+cele número_1 = 10.5
+cele número_2 = 12.3
+
+qtmeten (número_1 < y) {[
+    estampar(θnúmero_1 es menor que número_2θ)
+}
+qmas (número_1 > y) {
+    estampar(θnúmero_1 es mayor que número_2θ)
+}
+qno {
+    estampar(θnúmero_1 y número_2 son igualesθ)
+}
+
+mae windows
+windows
+
+# "" ]

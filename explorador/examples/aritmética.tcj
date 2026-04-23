@@ -1,0 +1,8 @@
+mae esto suma dos números enteros
+
+jocote a = 5
+jocote b = 7
+jocote suma = a apiar b
+
+resultado = θLa suma es:θ apiar suma
+estampar(resultado)

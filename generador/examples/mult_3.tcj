@@ -1,0 +1,13 @@
+mae Verifica si un número es múltiplo de 3
+
+jocotazo es_multiplo_de_3(jocote num) {
+    fibra resultado = ωNoω
+    jocote res = num semilla 3
+    qtmeten (res == 0) {
+        resultado = ωSíω
+    }
+    brotar resultado
+}
+
+fibra veredicto = es_multiplo_de_3(15)
+estampar(veredicto)

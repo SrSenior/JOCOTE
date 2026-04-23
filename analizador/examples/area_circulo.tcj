@@ -1,0 +1,12 @@
+mae calcular el area de un circulo
+
+jocotazo area_circulo(cele radio) {
+    cele pi = 3.1416
+    cele resultado = pi sembrar radio       mae pi * r
+    resultado = resultado sembrar radio     mae (pi * r) * r
+    brotar resultado
+}
+
+jocote radio = 4
+jocote area = area_circulo(radio)
+estampar(area)

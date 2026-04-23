@@ -1,0 +1,23 @@
+mae Función para verificar credenciales
+
+jocotazo verificar_login(fibra usuario, fibra clave) {
+    fibra user_valido = θadminθ
+    fibra pass_valido = ωsecretoω
+    fibra acceso_valido = ω ω
+    
+    qtmeten (usuario == user_valido) {
+        qtmeten (clave == pass_valido) {
+            acceso_valido = ωTrueω          mae para los jocotes no todo es solo blanco o negro, por lo que no hay booleanos.
+        }
+    }
+    qno {
+        acceso_valido = ωFalseω
+    }
+    
+    brotar acceso_valido
+}
+
+fibra input_user = θusuarioθ
+fibra input_pass = ωclaveω
+fibra acceso = verificar_login(input_user, input_pass)
+estampar(acceso)

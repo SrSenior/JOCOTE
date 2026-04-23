@@ -1,0 +1,12 @@
+mae Suma 5 números específicos (no hay listas, se hace manual)
+
+jocotazo suma_5(jocote a, jocote b, jocote c, jocote d, jocote e) {
+    jocote suma = a apiar b
+    suma = suma apiar c
+    suma = suma apiar d
+    suma = suma apiar e
+    brotar suma
+}
+
+jocote total = suma_5(2, 4, 6, 8, 10)
+estampar_num(total)

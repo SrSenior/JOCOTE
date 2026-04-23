@@ -1,0 +1,16 @@
+mae Calcula el factorial de un número
+
+jocotazo factorial(jocote n) {
+    jocote resultado = 1
+
+    madurar (n > 1) {
+        resultado = resultado sembrar n
+        n = n comer 1
+    }
+
+    brotar resultado
+}
+
+jocote n = 5
+jocote fact = factorial(n)
+estampar_num(fact)
